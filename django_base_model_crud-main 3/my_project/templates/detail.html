@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block main %}
+<h1>{{post.title}}</h1>
+<h2>{{post.author}}</h2>
+<p><span>{{post.created_at}}</span>{{post.text}}</p>
+<ul>
+    {% for comm in comments %}
+    <li>{{ comm }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create_comment' post.id %}">Додати коментар</a>
+{% endblock main %}

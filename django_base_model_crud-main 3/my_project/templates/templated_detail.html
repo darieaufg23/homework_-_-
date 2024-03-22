@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block main %}
+
+{% for key, value in item.items %}
+<p>
+    <span>{{ key }}</span>
+    <span>{{ value }}</span>
+</p>
+{% endfor %}
+<a href="{% url 'edit' pk=item.pk %}">Edit</a>
+{% endblock main %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block main %}
+<ul>
+    {% for  in  %}
+    
+    {% empty %}
+    #@
+    {% endfor %}
+    {% for item in post_list %}
+        
+        <li><a href="{% url 'detail' item.id %}">{{ item.title }} -- {{ item.author }}</li>
+    {% endfor %}
+</ul>
+{% endblock main %}

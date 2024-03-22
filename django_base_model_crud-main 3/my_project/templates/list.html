@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main %}
+<ul>
+    {% for item in items %}
+
+        <li><a href="{% url 'detail' pk=item.pk %}"> {{ item }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock main %}

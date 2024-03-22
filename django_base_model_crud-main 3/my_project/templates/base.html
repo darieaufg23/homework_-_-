@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/cura-high-resolution-logo-black-transparent.png'%}">
+
+
+</head>
+
+<body>
+    {% block header %}{% endblock header %}
+    {% block main %}{% endblock main %}
+    {% block footer %}{% endblock footer %}
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

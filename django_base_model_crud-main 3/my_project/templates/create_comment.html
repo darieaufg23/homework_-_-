@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main %}
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="post_id" id="post_id" value={{post_id}}>
+    <input type="text" name="text" id="text">
+    <input type="submit" value="Place comment">
+</form>
+{% endblock main %}
